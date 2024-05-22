@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset style="width:30%; margin:0 auto;" id="fs">
+        <p style="text-align: center;">Number of Scoops <input type="text" name="nscoops" id="nscoops"></p>
+        <p style="text-align: center;"> <input type="radio" name="stype" id="cone"> Cone
+            <input type="radio" name="stype" id="cup"> Cup
+        </p>
+        <fieldset id="extrafs">
+            <p> Toppings </p>
+            <input type="checkbox" name="Sprinkles" id="sprinkles"> Sprinkles ($0.50)  &nbsp;&nbsp;
+            <input type="checkbox" name="WhippedCream" id="whippedcream"> WhippedCream ($0.25)    <br><br>
+            <input type="checkbox" name="HotFudge" id="hotfudge"> Hot Fudge ($1.25)  &nbsp;  
+            <input type="checkbox" name="Cherry" id="cherry"> Cherry ($0.25)
+        </fieldset>
+        <br>
+        <p style="text-align: center;"><input type="button" value="Submit Order" id="submitorder"></p>
+
+
+    </fieldset>
+
+    <script src="./scripts/cost_icecream.js"></script>
+
+</body>
+
+</html>
