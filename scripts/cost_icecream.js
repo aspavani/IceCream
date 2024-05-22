@@ -20,11 +20,14 @@ function init() {
 }
 
 function displayextras() {
+    cleartcpara();
     let extrafs = document.getElementById("extrafs");
     extrafs.style.display = 'block';
 }
 
 function noextras() {
+
+    cleartcpara();
 
     let extrafs = document.getElementById("extrafs");
     extrafs.style.display = 'none';
@@ -33,10 +36,7 @@ function noextras() {
 function onSubmitOrderClicked(){
 
     let fs_ele = document.getElementById("fs");
-    let tcpara_ele = document.getElementById("tcpara");
-
-    if(tcpara_ele)
-        fs_ele.removeChild(tcpara_ele);
+    cleartcpara();
 
     let nscoops_ele = document.getElementById("nscoops");
     let num_scoops = nscoops_ele.value;
@@ -87,5 +87,14 @@ function onSubmitOrderClicked(){
     fs_ele.appendChild(p_ele);
 
 
+
+}
+
+function cleartcpara() {
+    let fs_ele = document.getElementById("fs");
+    let tcpara_ele = document.getElementById("tcpara");
+
+    if(tcpara_ele)
+        fs_ele.removeChild(tcpara_ele);
 
 }
